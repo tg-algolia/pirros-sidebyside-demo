@@ -254,7 +254,7 @@ function initializeSearchInstance1(appId, apiKey, indexName, searchMode, attribu
                         <div class="hit-card">
                             <div class="hit-image">
                                 ${hit[attributes.imageAttr]
-                                    ? html`<img src="${hit[attributes.imageAttr]}" || 'Product'}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2214%22 fill=%22%23999%22%3ENo Image%3C/text%3E%3C/svg%3E'" />`
+                                    ? html`<img src="${hit[attributes.imageAttr]}" alt="${hit[attributes.titleAttr] || 'Product'}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2214%22 fill=%22%23999%22%3ENo Image%3C/text%3E%3C/svg%3E'" />`
                                     : html`<div class="no-image">No Image</div>`
                                 }
                             </div>
@@ -355,7 +355,7 @@ function initializeSearchInstance2(appId, apiKey, indexName, searchMode, attribu
                         <div class="hit-card">
                             <div class="hit-image">
                                 ${hit[attributes.imageAttr]
-                                    ? html`<img src="${hit[attributes.imageAttr]}" || 'Product'}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2214%22 fill=%22%23999%22%3ENo Image%3C/text%3E%3C/svg%3E'" />`
+                                    ? html`<img src="${hit[attributes.imageAttr]}" alt="${hit[attributes.titleAttr] || 'Product'}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2214%22 fill=%22%23999%22%3ENo Image%3C/text%3E%3C/svg%3E'" />`
                                     : html`<div class="no-image">No Image</div>`
                                 }
                             </div>
